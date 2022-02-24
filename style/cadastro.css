@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+body{
+  background-image: url(/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+h1{
+  text-align: center;
+  color:#181818;
+  margin-bottom: 20px;
+
+}
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card{
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000070;
+
+  min-width: 70vw;
+  /* min-height: 30vh; */
+}
+
+.label-float input{
+  width:100%;
+  padding:5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-in-out;
+  border-radius: 0;
+
+}
+
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #49811c;
+  
+}
+
+.label-float label{
+  color: #181818;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label{
+  font-size: 13px;
+  margin:0;
+  color: #2b4b10;
+  
+}
+
+button{
+  background-color: transparent;
+  border-color:#2b4b10  ; 
+  color: #2b4b10;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #2b4b10;
+  color:white ; 
+}
+
+
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* mudar a cores do projeto, altera o tamanho da imagem entorno de 1000px */
+
+/* aula 2 5min 56s -     alterando o tamnaho card 400px */
