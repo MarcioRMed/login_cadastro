@@ -113,6 +113,13 @@ button:hover{
   justify-content: center;
 }
 
+.fa-eye{
+  position: absolute;
+  top:14px;
+  right: 10px;
+  cursor: pointer;
+}
+
 
 /* mudar a cores do projeto, altera o tamanho da imagem entorno de 1000px */
 

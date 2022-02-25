@@ -1,9 +1,9 @@
 
+// Ver senha
 
 let btn = document.querySelector('.fa-eye')
 
-btn.addEventListener('click', ()=>{
-  
+btn.addEventListener('click', ()=>{  
 
   let inputSenha = document.querySelector('#senha')
 
