@@ -81,7 +81,8 @@ h1{
   transition: all .3s ease-out;
 }
 
-.label-float input:focus + label{
+.label-float input:focus + label,
+.label-float input:valid + label{ 
   font-size: 13px;
   margin:0;
   color: #2b4b10;
@@ -134,6 +135,15 @@ a{
 
 a:hover{
   color: #181818
+}
+
+
+.fa-eye{
+  position: absolute;
+  top:16px;
+  right: 10px;
+  cursor: pointer;
+  color: #181818;
 }
 
 /* mudar a cores do projeto, altera o tamanho da imagem entorno de 1000px */

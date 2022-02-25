@@ -4,6 +4,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/style/login.css">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+
 <title>Login</title>
 </head>
 
@@ -18,13 +21,14 @@
       <h1>Entrar</h1>
 
       <div class="label-float">
-        <input type="text" id="usuario" placeholder="">
-        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" placeholder="" required>
+        <label for="usuario">Usuário</label>
       </div>
 
       <div class="label-float">
-        <input type="password" id="senha" placeholder="">
+        <input type="password" id="senha" placeholder="" required>
         <label for="senha">Senha</label>
+        <i class="fa-solid fa-eye"></i>
       </div>
 
       <div class="justify-center">
@@ -45,6 +49,7 @@
 
   </div>
 
+  <script src="/js/login.js"></script>
 
 </body>
 
