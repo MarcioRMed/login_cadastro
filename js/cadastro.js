@@ -83,9 +83,8 @@ confirmSenha.addEventListener('keyup' , () => {
 })
 
 
-
-
-function cadastrar(){
+//validando o cadastro
+function cadastrar() {
   if(validNome && validUsuario && validSenha && validConfirmSenha){
   
     msgSuccess.setAttribute('style', 'display: block')
@@ -100,17 +99,15 @@ function cadastrar(){
     msgSuccess.innerHTML = ''
     
 
-    console.log(validNome)
-    console.log(validUsuario)
-    console.log(validSenha)
-    console.log(validConfirmSenha)
+    // console.log(validNome)
+    // console.log(validUsuario)
+    // console.log(validSenha)
+    // console.log(validConfirmSenha)
   }
 
 }
 
-
-
-
+//ver senha 
 btn.addEventListener('click', ()=>{ 
 
   let inputSenha = document.querySelector('#senha')
@@ -123,7 +120,6 @@ btn.addEventListener('click', ()=>{
 })
 
 // confirm senha
-
 btnConfirmSenha.addEventListener('click', ()=>{  
 
   let inputConfirmSenha = document.querySelector('#confirmSenha')
