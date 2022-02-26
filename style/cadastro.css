@@ -120,6 +120,29 @@ button:hover{
   cursor: pointer;
 }
 
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #181818;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #00ff00;
+  background-color: #181818;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+
+
+
+
+
 
 /* mudar a cores do projeto, altera o tamanho da imagem entorno de 1000px */
 
