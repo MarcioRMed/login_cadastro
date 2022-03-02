@@ -87,10 +87,29 @@ confirmSenha.addEventListener('keyup' , () => {
 function cadastrar() {
   if(validNome && validUsuario && validSenha && validConfirmSenha){
   
+    //Json.parse transforma em json
+    //pegar o localStorege - listaUser ou array vazio
+    let listaUser = JSON.parse(localStorage.getItem('listaUser') || ' []')
+
+    listaUser.push(
+      { nomeCad: nome.value,
+        userCad: usuario.value,
+        senhaCad: senha.value
+    }
+    )
+
+    //criar um novo registro no localStorege
+    localStorage.setItem('listaUser', JSON.stringify(listaUser))
+
     msgSuccess.setAttribute('style', 'display: block')
-    msgSuccess.innerHTML = 'Carregando usuario...'
+    msgSuccess.innerHTML = 'Cadastrado Usuário...'
     msgError.setAttribute('style' , 'display: none')
     msgError.innerHTML = ''
+
+    //espera 3seg. 
+    setTimeout(()=>{
+      window.location.href = '/login.html'
+    },3000)
 
   }else{
     msgError.setAttribute('style' , 'display: block')
@@ -130,3 +149,16 @@ btnConfirmSenha.addEventListener('click', ()=>{
     inputConfirmSenha.setAttribute('type' , 'password')
   }
 })
+
+
+
+// ------------------------------------------------
+// aula 3 - 28min 39segundo - localstorage
+//https://www.youtube.com/watch?v=THQujIyE7Tg
+
+
+//aula 4 
+// https://www.youtube.com/watch?v=jze3TasX5DA&t=800s&ab_channel=ThiCode
+
+
+
