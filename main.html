@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logado</title>
+</head>
+
+<style>
+  body{
+  background-image: url(/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;      
+  }
+</style>
+
+<body>
+    <h1 id="logado"></h1>
+    
+    <button onclick="sair()">Sair</button>
+</body>
+
+<script>
+
+//transforma em objeto
+let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+
+let logado = document.querySelector('#logado')
+
+logado.innerHTML = `Olá ${userLogado.nome}`
+
+
+// tentar entar no link sem o token retorna para a pag. login
+if(localStorage.getItem('token') == null){
+  alert('Você precisa estar logado para acessar essa página')
+  window.location.href = 'login.html'
+}
+
+
+function sair(){
+      
+    // localStorage.clear() //limpa todo o localStorage
+
+    localStorage.removeItem('token')
+    localStorage.removeItem('userLogado')
+
+    window.location.href = 'login.html'
+    
+  }
+</script>
+
+
+</html>
